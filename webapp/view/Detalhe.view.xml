@@ -1,0 +1,53 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ovly.fiori_13_t.cadastro_de_alunos.controller.Detalhe" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Aluno 10" showNavButton="true" navButtonPress="onBack">
+				<content>
+				    <ObjectHeader xmlns="sap.m" intro="{Id}" title="{path: 'FirstName', formatter: '.toUpper'} {LastName}" id="header0">
+				        <attributes>
+				            <ObjectAttribute title="Nascimento" text="{path: 'BirthDate', type: 'sap.ui.model.type.DateTime', formatOptions: {UTC: true}}"/>
+				            <ObjectAttribute title="Usuário" text="{UserName}"/>
+				            </attributes>
+				        </ObjectHeader>
+				    <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+				        <headerToolbar>
+				            <Toolbar id="toolbar1">
+				                <Title text="Dados Administrativos"/>
+				                </Toolbar>
+				            
+				        </headerToolbar>
+				        <content>
+				            <core:Fragment fragmentName="ovly.fiori_13_t.cadastro_de_alunos.view.Detalhe_Form" type="XML" xmlns:core="sap.ui.core" id="form0"/>
+				        </content>
+				        </Panel>
+				    <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel1">
+				        <headerToolbar>
+				            <Toolbar id="toolbar2">
+				                <Title text="Competências"/>
+				                </Toolbar>
+				            
+				        </headerToolbar>
+				        <content>
+				            <List noDataText="Drop list items here" id="list0">
+				                <items>
+				                    <DisplayListItem label="SAPUI5" id="item1"/>
+				                    <DisplayListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" label="POSTMAN" id="item1_copy"/>
+				                    <DisplayListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" label="SAP BUILD" id="item1_copy2"/>
+				                </items>
+				            </List>
+				        </content>
+				        </Panel>
+				</content>
+			<footer>
+			    <Toolbar width="100%" id="toolbar1_1597410503399">
+			    <content>
+			        <Button xmlns="sap.m" text="Deletar" id="button2" type="Reject" icon="sap-icon://delete"/>
+			        <ToolbarSpacer id="spacer3"/>
+			        <Button xmlns="sap.m" text="Editar" id="button3" type="Accept" icon="sap-icon://edit"/>
+			    </content>
+			    </Toolbar>
+			</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

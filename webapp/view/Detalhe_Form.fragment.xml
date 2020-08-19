@@ -1,0 +1,38 @@
+<core:FragmentDefinition xmlns:core='sap.ui.core' xmlns:m="sap.m" xmlns="sap.ui.layout.form">
+	
+	<Form xmlns:html="http://www.w3.org/1999/xhtml" editable="true" id="form0">
+		<formContainers>
+			<FormContainer id="container0_1597413411861">
+				<formElements>
+					<FormElement label="Criado por" id="element0_1597413411861">
+						<fields>
+							<m:Text text="Toti" id="text3"/>
+						</fields>
+					</FormElement>
+					<FormElement label="Criado em" id="element2">
+						<fields>
+							<m:Text text="dd/mm/aaaa" id="text4"/>
+						</fields>
+					</FormElement>
+				</formElements>
+			</FormContainer>
+			<FormContainer id="container0_1597413411861_copy2">
+				<formElements>
+					<FormElement label="Modificado por" id="element0_1597413411861_copy2">
+						<fields>
+							<m:Text text="Toti" id="text3_copy2"/>
+						</fields>
+					</FormElement>
+					<FormElement label="Modificado em" id="element2_copy2">
+						<fields>
+							<m:Text text="dd/mm/aaaa" id="text4_copy2"/>
+						</fields>
+					</FormElement>
+				</formElements>
+			</FormContainer>
+		</formContainers>
+		<layout>
+			<ResponsiveGridLayout id="layout0"/>
+		</layout>
+	</Form>
+</core:FragmentDefinition>
